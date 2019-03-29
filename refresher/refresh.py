@@ -9,11 +9,16 @@ if hasattr(sys, 'real_prefix'):
 	split_path = sys.path[0].splitlines() 
 	script_path = split_path[0]
 	script = ("%s/refre.sh" % script_path) # this is why!~
-	
-	dirs = sys.prefix.split("/") # virtualenv's python path
-	venv_dir = dirs[-1] # just the name of the virtualenv folder 
+
+	venv_fullpath = sys.prefix # full path to virtualenv instance
+	dirs = venv_fullpath.split("/") # virtualenv's python path
+	venv_name = dirs[-1] # just the name of the virtualenv folder 
+	delimiter = ("/%s" % venv_name)
+	venv_parent = venv_fullpath.split(delimiter)[0] # for cd
+
 	if os.path.isfile(script):
-		subprocess.call(["bash", script, venv_dir])
+		print()
+		subprocess.call(["bash", script, venv_name, venv_parent, venv_fullpath])
 
 else:
 	print("virtualenv not enabled.")
