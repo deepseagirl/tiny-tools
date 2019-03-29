@@ -9,9 +9,7 @@ then
 		
 		rm -rf "$3"
 		echo pls wait... rebuilding
-		
 		dir=$(pwd)
-
 		cd "$2" # cd to parent folder of original virtualenv 
 		virtualenv "$1" -p python3 --quiet 
 		source "$1"/bin/activate
