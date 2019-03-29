@@ -3,16 +3,10 @@
 ```
 files: refresh.py and refre.sh
 ```
-` a shortcut for reverting a python virtualenv environment to a default/blank state. `
+` a shortcut for reverting a python virtualenv environment to a default/blank state (makes python3 instance by default*). `
 
 ` quickly tears down an active virtualenv instance and puts back up a fresh one in the same file location + `
 ` with the same name as the original instance! ^_^ `
-
-
-
-
-
-
 
 ### usage:
 - while in the directory that holds the **active virtualenv's folder**, `python3 ~/.scripts/refresh.py` to revert to a fresh virtualenv instance
@@ -33,5 +27,14 @@ files: refresh.py and refre.sh
 <br>
 </td></tr></table>
 
+---
+
+**\*note:**  this script creates a **python3** virtualenv instance by default.
+
+to specify another version, modify `refre.sh`, line 13: `virtualenv "$1" -p python3 --quiet` to `-p <version>`.
+  
+a future update will include a default python version you can set + optional version command line argument to specify a version to use this time.
+
+---
 
 `♡ thanks for checking it out ♡`
