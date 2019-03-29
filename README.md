@@ -1,5 +1,5 @@
 # tiny-tools
-Just some lil quality of life improvement scripts, nothing too earth-shattering going on here.
+Just some lil quality of life improvement scripts, bash and python, nothing too earth-shattering going on here.
 
 ### 
 
