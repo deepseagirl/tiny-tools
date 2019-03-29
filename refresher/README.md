@@ -9,12 +9,12 @@ files: refresh.py and refre.sh
 ` with the same name as the original instance! ^_^ `
 
 ### usage:
-- while in the directory that holds the **active virtualenv's folder**, `python3 ~/.scripts/refresh.py` to revert to a fresh virtualenv instance
+- while in the directory that holds the **active virtualenv's folder** (for me this is typically in a project's main/outermost directory), `python3 ~/.scripts/refresh.py` to revert to a fresh virtualenv instance
 
-- add an alias for the script in bashrc: `alias refresh="python3 ~/.scripts/refresh.py"` (optional, obviously)
+- add an alias for the script in bashrc: `alias refresh="python3 path/to/refresh.py"` (optional, obviously)
 
 - `refresh.py` and `refre.sh` only need to be kept in the same folder as each other in order to call script from anywhere 
-- having activated `virtualenv path/to/here/env1` by running `source env1/bin/activate`, running `refresh` in `path/to/here` will function like so:
+- having activated virtualenv `path/to/here/env1` by running `source env1/bin/activate`, running `refresh` in `path/to/here` will function like so:
 <table><tr>
 <td>
 <img src="https://i.ibb.co/qD8Mj2H/refresh.png" width="100%">
