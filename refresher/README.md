@@ -9,7 +9,7 @@ files: refresh.py and refre.sh
 ` with the same name as the original instance! ^_^ `
 
 ### usage:
-- while in the directory that holds the **active virtualenv's folder** (for me this is typically in a project's main/outermost directory), `python3 ~/.scripts/refresh.py` to revert to a fresh virtualenv instance
+- while in the directory that holds the **active virtualenv's folder** (for me this is typically in a project's main/outermost directory), `python3 path/to/refresh.py` to revert to a fresh virtualenv instance
 
 - add an alias for the script in bashrc: `alias refresh="python3 path/to/refresh.py"` (optional, obviously)
 
