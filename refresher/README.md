@@ -14,7 +14,7 @@ files: refresh.py and refre.sh
 - add an alias for the script in bashrc: `alias refresh="python3 path/to/refresh.py"` (optional, obviously)
 
 - `refresh.py` and `refre.sh` only need to be kept in the same folder as each other in order to call script from anywhere 
-- having activated virtualenv `path/to/here/env1` by running `source .../env1/bin/activate`, running `refresh` script will function like so:
+- having activated virtualenv `env1` by running `source .../env1/bin/activate`, running `refresh` script will function like so:
 <table><tr>
 <td>
 <img src="https://i.ibb.co/qD8Mj2H/refresh.png" width="100%">
