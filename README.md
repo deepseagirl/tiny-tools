@@ -3,7 +3,11 @@ Just some lil quality of life improvement scripts, nothing too earth-shattering 
 
 ### 
 
-
+### refresher
+```
+refresh your virtualenv to a default install with 1 command ~  
+see refresher/README.md :)
+```
 
 ### logparse.py
 ```
