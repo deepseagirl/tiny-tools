@@ -5,7 +5,7 @@ files: refresh.py and refre.sh
 ```
 ` a shortcut for reverting a python virtualenv environment to a default/blank state. `
 
-` quickly tears down an active virtualenv instance and puts back up a fresh one in the same file location + `
+` quickly tears down an active virtualenv instance and puts back up + activates a fresh one in the same file location + `
 ` with the same name as the original instance! ^_^ `
 
 ### usage:
